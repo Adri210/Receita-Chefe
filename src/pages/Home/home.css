@@ -1,0 +1,109 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do cabeçalho */
+  .header {
+    background-color: #333;
+    color: rgb(230, 146, 11);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  /* Estilo da grid de receitas */
+  .grid {
+    display: flex;
+    flex-direction: column; /* Alinhar receitas uma embaixo da outra */
+    align-items: center;
+    padding: 20px;
+    max-width: 600px; /* Limitar a largura total da lista */
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    width: 100%; /* Cada item ocupa 100% da largura do contêiner */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .grid-item h3 {
+    margin: 0;
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  }
+  
+  /* Link circular para as receitas */
+  .grid-item a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5%;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .grid-item a:hover {
+    background-color: #45a049;
+  }
+  
+  /* Botão de adicionar receita */
+  .add-recipe-button {
+    background-color: #FF5722;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+
+  .container-button{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+  }
+  
+  .add-recipe-button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .grid-item {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+  
+    .header-text h1 {
+      font-size: 2em;
+    }
+  
+    .add-recipe-button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  }
+  

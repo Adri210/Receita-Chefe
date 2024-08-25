@@ -1,0 +1,64 @@
+/* Estilo geral da página de adicionar receita */
+.add-recipe-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.add-recipe-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.textarea-field {
+  min-height: 100px;
+  resize: vertical; /* Permite que o usuário ajuste a altura */
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .add-recipe-container {
+    padding: 15px;
+  }
+
+  .input-field,
+  .textarea-field {
+    font-size: 0.9em;
+  }
+
+  .submit-button {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "titulo": "Omelete Simples",
+    "ingredientes": ["2 ovos", "Sal", "Pimenta", "Manteiga"],
+    "modoPreparo": "Bata os ovos, tempere com sal e pimenta. Aqueça a manteiga em uma frigideira e despeje os ovos batidos. Cozinhe até firmar."
+  },
+  {
+    "id": 2,
+    "titulo": "Macarrão Alho e Óleo",
+    "ingredientes": ["200g de macarrão", "3 dentes de alho", "Azeite", "Sal", "Pimenta"],
+    "modoPreparo": "Cozinhe o macarrão. Em uma frigideira, doure o alho no azeite. Misture o macarrão com o alho, tempere e sirva."
+  },
+  {
+    "id": 3,
+    "titulo": "Salada de Atum",
+    "ingredientes": ["1 lata de atum", "Alface", "Tomate", "Cebola", "Azeite", "Sal"],
+    "modoPreparo": "Misture todos os ingredientes em uma tigela e tempere a gosto."
+  },
+  {
+    "id": 4,
+    "titulo": "Panqueca de Banana",
+    "ingredientes": ["1 banana", "2 ovos", "Canela a gosto"],
+    "modoPreparo": "Amasse a banana e misture com os ovos. Despeje a massa em uma frigideira e cozinhe até dourar."
+  },
+  {
+    "id": 5,
+    "titulo": "Brigadeiro",
+    "ingredientes": ["1 lata de leite condensado", "2 colheres de sopa de chocolate em pó", "1 colher de sopa de manteiga", "Granulado"],
+    "modoPreparo": "Misture o leite condensado, chocolate e manteiga em uma panela. Cozinhe até desgrudar da panela. Deixe esfriar, faça bolinhas e passe no granulado."
+  },
+  {
+    "id": 6,
+    "titulo": "Sanduíche Natural",
+    "ingredientes": ["2 fatias de pão integral", "Peito de peru", "Alface", "Tomate", "Queijo", "Maionese"],
+    "modoPreparo": "Monte o sanduíche com todos os ingredientes e sirva."
+  },
+  {
+    "id": 7,
+    "titulo": "Smoothie de Morango",
+    "ingredientes": ["1 xícara de morangos", "1 banana", "1 xícara de leite", "Mel a gosto"],
+    "modoPreparo": "Bata todos os ingredientes no liquidificador até ficar homogêneo."
+  },
+  {
+    "id": 8,
+    "titulo": "Guacamole",
+    "ingredientes": ["1 abacate", "1 tomate", "Cebola roxa", "Suco de limão", "Sal", "Coentro"],
+    "modoPreparo": "Amasse o abacate e misture com os outros ingredientes. Tempere a gosto."
+  },
+  {
+    "id": 9,
+    "titulo": "Iogurte com Granola e Mel",
+    "ingredientes": ["1 pote de iogurte natural", "Granola", "Mel"],
+    "modoPreparo": "Coloque a granola por cima do iogurte e finalize com mel."
+  },
+  {
+    "id": 10,
+    "titulo": "Biscoito de Aveia",
+    "ingredientes": ["1 xícara de aveia", "1 banana amassada", "1 colher de sopa de mel", "Canela a gosto"],
+    "modoPreparo": "Misture todos os ingredientes, faça bolinhas e asse em forno a 180°C por 15 minutos."
+  },
+  {
+    "id": 11,
+    "titulo": "Arroz com Brócolis",
+    "ingredientes": ["2 xícaras de arroz", "1 maço de brócolis", "Alho", "Sal", "Azeite"],
+    "modoPreparo": "Cozinhe o arroz. Refogue o alho no azeite, adicione o brócolis e misture com o arroz."
+  },
+  {
+    "id": 12,
+    "titulo": "Cuscuz Nordestino",
+    "ingredientes": ["1 xícara de farinha de milho", "1/2 xícara de água", "Sal", "Manteiga"],
+    "modoPreparo": "Misture a farinha de milho com a água e o sal. Cozinhe no cuscuzeiro por 10 minutos e sirva com manteiga."
+  },
+  {
+    "id": 13,
+    "titulo": "Torrada com Abacate",
+    "ingredientes": ["2 fatias de pão", "1 abacate", "Sal", "Pimenta", "Suco de limão"],
+    "modoPreparo": "Toste o pão. Amasse o abacate, tempere com sal, pimenta e limão. Espalhe sobre o pão."
+  },
+  {
+    "id": 14,
+    "titulo": "Frango Grelhado",
+    "ingredientes": ["2 filés de frango", "Sal", "Pimenta", "Azeite", "Alho"],
+    "modoPreparo": "Tempere o frango com sal, pimenta e alho. Grelhe em uma frigideira com azeite até dourar."
+  },
+  {
+    "id": 15,
+    "titulo": "Mousse de Maracujá",
+    "ingredientes": ["1 lata de leite condensado", "1 lata de creme de leite", "1 xícara de suco de maracujá"],
+    "modoPreparo": "Bata todos os ingredientes no liquidificador e leve à geladeira por 2 horas."
+  },
+  {
+    "id": 16,
+    "titulo": "Bolinho de Chuva",
+    "ingredientes": ["2 ovos", "2 colheres de açúcar", "2 xícaras de farinha de trigo", "1 xícara de leite", "1 colher de fermento"],
+    "modoPreparo": "Misture todos os ingredientes. Frite colheradas da massa em óleo quente até dourar."
+  },
+  {
+    "id": 17,
+    "titulo": "Sopa de Legumes",
+    "ingredientes": ["2 batatas", "2 cenouras", "1 abobrinha", "1 chuchu", "Água", "Sal", "Azeite"],
+    "modoPreparo": "Corte os legumes, cozinhe na água com sal até amolecer. Bata no liquidificador ou sirva em pedaços."
+  },
+  {
+    "id": 18,
+    "titulo": "Salada de Frutas",
+    "ingredientes": ["Maçã", "Banana", "Laranja", "Manga", "Suco de laranja", "Mel"],
+    "modoPreparo": "Corte as frutas em pedaços, misture com o suco de laranja e mel."
+  },
+  {
+    "id": 19,
+    "titulo": "Bolo de Caneca",
+    "ingredientes": ["4 colheres de farinha de trigo", "4 colheres de açúcar", "2 colheres de chocolate em pó", "1 ovo", "Leite", "Óleo"],
+    "modoPreparo": "Misture todos os ingredientes em uma caneca e leve ao micro-ondas por 3 minutos."
+  },
+  {
+    "id": 20,
+    "titulo": "Pão de Queijo de Tapioca",
+    "ingredientes": ["1 xícara de tapioca granulada", "1 xícara de leite", "1 xícara de queijo ralado", "1 ovo"],
+    "modoPreparo": "Misture todos os ingredientes, faça bolinhas e asse em forno a 180°C por 20 minutos."
+  },
+  {
+    "id": 21,
+    "titulo": "Suco Verde",
+    "ingredientes": ["1 folha de couve", "1 maçã", "1 pedaço de gengibre", "1 copo de água de coco", "Suco de limão"],
+    "modoPreparo": "Bata todos os ingredientes no liquidificador e coe antes de servir."
+  },
+  {
+    "id": 22,
+    "titulo": "Bife à Milanesa",
+    "ingredientes": ["4 bifes de carne", "Farinha de trigo", "Farinha de rosca", "2 ovos", "Sal", "Pimenta", "Óleo"],
+    "modoPreparo": "Tempere os bifes, passe na farinha de trigo, depois nos ovos batidos e na farinha de rosca. Frite em óleo quente."
+  },
+  {
+    "id": 23,
+    "titulo": "Batata Assada com Alecrim",
+    "ingredientes": ["4 batatas", "Azeite", "Sal", "Pimenta", "Alecrim"],
+    "modoPreparo": "Corte as batatas, tempere com azeite, sal, pimenta e alecrim. Asse em forno a 200°C por 30 minutos."
+  },
+  {
+    "id": 24,
+    "titulo": "Café Gelado",
+    "ingredientes": ["1 xícara de café coado", "Gelo", "Leite", "Açúcar"],
+    "modoPreparo": "Misture o café com gelo, leite e açúcar a gosto."
+  },
+  {
+    "id": 25,
+    "titulo": "Ovo Cozido",
+    "ingredientes": ["2 ovos", "Água", "Sal"],
+    "modoPreparo": "Coloque os ovos em uma panela com água e sal. Cozinhe por 10 minutos após ferver."
+  },
+  {
+    "id": 26,
+    "titulo": "Tapioca com Coco",
+    "ingredientes": ["2 colheres de goma de tapioca", "Coco ralado", "Leite condensado"],
+    "modoPreparo": "Espalhe a goma de tapioca em uma frigideira, adicione o coco e dobre ao meio. Regue com leite condensado."
+  },
+  {
+    "id": 27,
+    "titulo": "Salmão Assado",
+    "ingredientes": ["1 filé de salmão", "Sal", "Pimenta", "Azeite", "Alecrim", "Limão"],
+    "modoPreparo": "Tempere o salmão com sal, pimenta, azeite, alecrim e limão. Asse em forno a 200°C por 20 minutos."
+  },
+  {
+    "id": 28,
+    "titulo": "Molho Pesto",
+    "ingredientes": ["1 maço de manjericão", "1/2 xícara de azeite", "1/4 xícara de nozes", "1/2 xícara de queijo parmesão", "2 dentes de alho"],
+    "modoPreparo": "Bata todos os ingredientes no liquidificador até obter uma pasta homogênea."
+  },
+  {
+    "id": 29,
+    "titulo": "Farofa Simples",
+    "ingredientes": ["2 colheres de manteiga", "1 cebola picada", "2 xícaras de farinha de mandioca", "Sal"],
+    "modoPreparo": "Derreta a manteiga, refogue a cebola e adicione a farinha. Mexa até dourar e tempere com sal."
+  },
+  {
+    "id": 30,
+    "titulo": "Arroz Doce",
+    "ingredientes": ["1 xícara de arroz", "2 xícaras de leite", "1 lata de leite condensado", "Canela em pó"],
+    "modoPreparo": "Cozinhe o arroz no leite até amolecer. Adicione o leite condensado e cozinhe até engrossar. Sirva com canela."
+  }
+]
