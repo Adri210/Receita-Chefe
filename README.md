@@ -2,7 +2,8 @@
 # Projeto de Receitas
 
 Este projeto é um aplicativo web de receitas construído com React, utilizando o Firebase Firestore para armazenar e gerenciar receitas, além de integrar dados locais de um arquivo JSON. Os usuários podem adicionar, visualizar, e excluir receitas.
-
+## Deploy link
+ Link: https://receitasm.netlify.app/
 ## Funcionalidades
 
 - **Listagem de Receitas**: Exibe uma lista de receitas armazenadas no Firestore e no arquivo `api.json`.
@@ -30,7 +31,7 @@ Este projeto é um aplicativo web de receitas construído com React, utilizando 
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/projeto-receitas.git
+   git clone https://github.com/Adri210/Receita-Chefe/
    ```
 
 2. **Instale as dependências**:
