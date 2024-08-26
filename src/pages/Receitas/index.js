@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { db } from '../Adicionar/firebaseconection'; // Ajuste o caminho conforme necessário
+import { db } from '../Adicionar/firebaseconection'; 
 import { collection, getDocs, doc, deleteDoc } from 'firebase/firestore';
-import chefData from './../../chef.json'; // Importar dados do chef.json
+import chefData from './../../api.json'; 
 import './receitas.css';
 
 function Receitas() {
   const { id } = useParams();
   const [receita, setReceita] = useState(null);
-  const navigate = useNavigate(); // Navegar após exclusão
-
+  const navigate = useNavigate(); 
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -40,10 +39,10 @@ function Receitas() {
 
   const handleDelete = async () => {
     try {
-      // Excluir do Firestore
+  
       await deleteDoc(doc(db, 'receitas', id));
       alert('Receita excluída com sucesso!');
-      navigate('/'); // Redirecionar após exclusão
+      navigate('/'); 
     } catch (error) {
       console.error('Erro ao excluir receita:', error);
     }
@@ -53,7 +52,6 @@ function Receitas() {
     return <div>Receita não encontrada</div>;
   }
 
-  // Assegure-se de que ingredientes é um array
   const ingredientes = Array.isArray(receita.ingredientes) ? receita.ingredientes : [];
 
   return (

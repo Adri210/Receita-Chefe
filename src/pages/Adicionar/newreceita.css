@@ -1,4 +1,4 @@
-/* Estilo geral da página de adicionar receita */
+
 .add-recipe-container {
   max-width: 600px;
   margin: 20px auto;
@@ -28,7 +28,7 @@
 
 .textarea-field {
   min-height: 100px;
-  resize: vertical; /* Permite que o usuário ajuste a altura */
+  resize: vertical; 
 }
 
 .submit-button {
@@ -47,7 +47,7 @@
   background-color: #45a049;
 }
 
-/* Responsividade */
+
 @media (max-width: 600px) {
   .add-recipe-container {
     padding: 15px;

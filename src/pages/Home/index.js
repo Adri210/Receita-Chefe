@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { db } from '../Adicionar/firebaseconection'; // Ajuste o caminho conforme necessário
+import { db } from '../Adicionar/firebaseconection'; 
 import { collection, onSnapshot } from 'firebase/firestore';
-import chefData from './../../chef.json'; // Importar dados do chef.json
+import chefData from './../../api.json';
 import './home.css';
 
 function Home() {
@@ -10,16 +10,13 @@ function Home() {
   const [firestoreReceitas, setFirestoreReceitas] = useState([]);
   const [allReceitas, setAllReceitas] = useState([]);
 
-  // Buscar receitas do arquivo JSON
-  useEffect(() => {
-    // Verificar o conteúdo de chefData
-    console.log('Dados do JSON:', chefData);
 
-    // Definir apiReceitas com os dados do chef.json
+  useEffect(() => {
+  
     setApiReceitas(chefData);
   }, []);
 
-  // Buscar receitas do Firestore
+
   useEffect(() => {
     const unsubscribe = onSnapshot(collection(db, 'receitas'), (snapshot) => {
       const listaReceitas = snapshot.docs.map((doc) => ({
@@ -32,7 +29,6 @@ function Home() {
     return () => unsubscribe();
   }, []);
 
-  // Combinar receitas da API e do Firestore
   useEffect(() => {
     setAllReceitas([...apiReceitas, ...firestoreReceitas]);
   }, [apiReceitas, firestoreReceitas]);

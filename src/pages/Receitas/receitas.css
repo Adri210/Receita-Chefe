@@ -1,4 +1,4 @@
-/* Estilo geral da página de detalhes da receita */
+
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -54,7 +54,7 @@
 .container button:hover {
   background-color: #d32f2f;
 }
-/* Estilo do contêiner dos botões */
+
 .delete-button {
   display: flex;
   flex-direction: column;
@@ -95,7 +95,6 @@
 }
 
 
-/* Responsividade */
 @media (max-width: 600px) {
   .container {
     padding: 15px;

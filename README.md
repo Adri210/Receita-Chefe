@@ -1,70 +1,97 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Projeto de Receitas
 
-## Available Scripts
+Este projeto é um aplicativo web de receitas construído com React, utilizando o Firebase Firestore para armazenar e gerenciar receitas, além de integrar dados locais de um arquivo JSON. Os usuários podem adicionar, visualizar, e excluir receitas.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- **Listagem de Receitas**: Exibe uma lista de receitas armazenadas no Firestore e no arquivo `api.json`.
+- **Adicionar Receitas**: Permite aos usuários adicionar novas receitas ao Firestore.
+- **Excluir Receitas**: Usuários podem excluir receitas diretamente do Firestore.
+- **Visualizar Receita**: Detalhes da receita, como ingredientes e modo de preparo, são exibidos em uma página separada.
+- **Dados Mistos (Firestore e JSON)**: O app integra dados do Firestore e de um arquivo JSON local (`chefData`) para compor a lista de receitas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: Framework JavaScript para construir a interface do usuário.
+- **Firebase Firestore**: Banco de dados NoSQL utilizado para armazenar e gerenciar receitas.
+- **React Router**: Utilizado para navegação entre páginas.
+- **CSS**: Estilização personalizada para o layout e elementos visuais.
+- **JSON**: Dados locais de receitas pré-carregadas no arquivo `api.json`.
 
-### `npm test`
+## Instalação e Execução
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pré-requisitos
 
-### `npm run build`
+- Node.js instalado na máquina.
+- Conta no Firebase e um projeto criado.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Passos para rodar o projeto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/seu-usuario/projeto-receitas.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Instale as dependências**:
+   Navegue até o diretório do projeto e execute o comando:
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Configure o Firebase**:
+   - Crie um projeto no [Firebase](https://console.firebase.google.com/).
+   - Configure o Firestore para habilitar o banco de dados.
+   - Adicione o arquivo de configuração do Firebase em `src/Adicionar/firebaseconection.js` com suas credenciais.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```javascript
+   // firebaseconection.js
+   import { initializeApp } from 'firebase/app';
+   import { getFirestore } from 'firebase/firestore';
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   const firebaseConfig = {
+     apiKey: "SUAS_CREDENCIAIS",
+     authDomain: "SUAS_CREDENCIAIS",
+     projectId: "SUAS_CREDENCIAIS",
+     storageBucket: "SUAS_CREDENCIAIS",
+     messagingSenderId: "SUAS_CREDENCIAIS",
+     appId: "SUAS_CREDENCIAIS"
+   };
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   const app = initializeApp(firebaseConfig);
+   export const db = getFirestore(app);
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Rodar o projeto**:
+   ```bash
+   npm start
+   ```
 
-## Learn More
+5. **Acesse o aplicativo**:
+   Abra o navegador e vá para `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Estrutura do Projeto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **src/AdicionarReceita**: Componente responsável por adicionar receitas ao Firestore.
+- **src/Home**: Componente que lista todas as receitas, tanto do Firestore quanto do arquivo JSON local.
+- **src/Receitas**: Componente que exibe os detalhes de uma receita e permite excluí-la.
+- **api.json**: Arquivo contendo uma lista de receitas locais.
 
-### Code Splitting
+## Rotas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `/` : Página inicial, exibe a lista de todas as receitas.
+- `/AdicionarReceita` : Página para adicionar novas receitas.
+- `/receitas/:id` : Página que exibe os detalhes de uma receita selecionada.
 
-### Analyzing the Bundle Size
+## Como Adicionar Receitas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Acesse a página de adicionar receitas clicando no botão "Adicionar Receita" na página inicial.
+2. Preencha o título, ingredientes (separados por vírgula) e o modo de preparo.
+3. Clique no botão "Adicionar Receita". A receita será salva no Firestore.
 
-### Making a Progressive Web App
+## Como Excluir Receitas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Acesse os detalhes de uma receita clicando no título da receita na página inicial.
+2. Na página de detalhes, clique no botão "Excluir Receita".
+3. A receita será removida do Firestore e você será redirecionado à página inicial.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

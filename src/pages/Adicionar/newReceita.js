@@ -8,24 +8,23 @@ function AdicionarReceita() {
   const [titulo, setTitulo] = useState('');
   const [ingredientes, setIngredientes] = useState('');
   const [modoPreparo, setModoPreparo] = useState('');
-  const navigate = useNavigate(); // Criar uma instância do navigate
+  const navigate = useNavigate(); 
 
   const adicionarReceita = async () => {
     try {
-      // Transformar os ingredientes em um array separando por vírgula
+     
       const ingredientesArray = ingredientes.split(',').map((ingrediente) => ingrediente.trim());
 
       await addDoc(collection(db, 'receitas'), {
         titulo: titulo,
-        ingredientes: ingredientesArray, // Salvar como array
-        modoPreparo: modoPreparo,
+        ingredientes: ingredientesArray, 
       });
 
       alert('Receita adicionada com sucesso!');
       setTitulo('');
       setIngredientes('');
       setModoPreparo('');
-      navigate('/'); // Redirecionar para a página inicial
+      navigate('/');
     } catch (error) {
       console.error('Erro ao adicionar receita:', error);
     }
